@@ -773,7 +773,7 @@ body[data-sidebar=dark] .mm-active>i {
 body[data-sidebar=dark] .mm-active .active {
     color: #ffeb3b!important;
     border-right-color: #ffeb3b !important;
-    background: #244ea3;
+    /* background: #244ea3; */
 }
 
 body[data-sidebar=dark] .mm-active .active i {
