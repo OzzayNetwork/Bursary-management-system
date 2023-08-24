@@ -868,3 +868,139 @@ $(document).ready(function(){
     
     });
 })
+
+$(document).ready(function(){
+    $('.family-state').on('change', function(){
+        const val=$(this).val()
+        if(val==="other"){
+           $('.other-family-status').removeClass('d-none')
+        }
+        if(val!="other"){
+            $('.other-family-status').addClass('d-none')
+        }
+    })
+
+    // parents and guardians inputs
+    $('body').on('change','[name="father-radio"]', function(){
+        const val =$(this).val()
+        if(val==="yes"){
+            $('.father-inputs').removeClass("d-none")
+        }
+
+        if(val!="yes"){
+            $('.father-inputs').addClass("d-none")
+        }
+    })
+
+    $('body').on('change','[name="mother-radio"]', function(){
+        const val =$(this).val()
+        if(val==="yes"){
+            $('.mother-inputs').removeClass("d-none")
+        }
+
+        if(val!="yes"){
+            $('.mother-inputs').addClass("d-none")
+        }
+    })
+
+    $('body').on('change','[name="guardian-radio"]', function(){
+        const val =$(this).val()
+        if(val==="yes"){
+            $('.guardian-inputs').removeClass("d-none")
+        }
+
+        if(val!="yes"){
+            $('.guardian-inputs').addClass("d-none")
+        }
+    })
+
+    $('body').on('change','[name="received-before"]', function(){
+        const val =$(this).val()
+        if(val==="yes"){
+            $('.cdf-aid-before').removeClass("d-none")
+        }
+
+        if(val!="yes"){
+            $('.cdf-aid-before').addClass("d-none")
+        }
+    })
+
+    $('body').on('change','[name="received-aid"]', function(){
+        const val =$(this).val()
+        if(val==="yes"){
+            $('.other-aid-inputs').removeClass("d-none")
+        }
+
+        if(val!="yes"){
+            $('.other-aid-inputs').addClass("d-none")
+        }
+    })
+
+    $('body').on('change','[name="physican-suffure"]', function(){
+        const val =$(this).val()
+        if(val==="yes"){
+            $('.physical-condition-inputs').removeClass("d-none")
+        }
+
+        if(val!="yes"){
+            $('.physical-condition-inputs').addClass("d-none")
+        }
+    })
+
+
+    $('body').on('change','[name="chronic-suffure"]', function(){
+        const val =$(this).val()
+        if(val==="yes"){
+            $('.chronic-condition-inputs').removeClass("d-none")
+        }
+
+        if(val!="yes"){
+            $('.chronic-condition-inputs').addClass("d-none")
+        }
+    })
+
+    $('body').on('change','[name="disabled-parent"]', function(){
+        const val =$(this).val()
+        if(val==="yes"){
+            $('.parent-condition-inputs').removeClass("d-none")
+        }
+
+        if(val!="yes"){
+            $('.parent-condition-inputs').addClass("d-none")
+        }
+    })
+})
+
+// Get all elements with the class "select-can-add"
+const selectPickers = document.querySelectorAll(".select-can-add");
+
+// Add the functionality to each select picker
+selectPickers.forEach(selectPicker => {
+    // Find the search input field within the select picker
+    const searchInput = selectPicker.previousElementSibling.querySelector('.bs-searchbox input');
+
+    // Add an event listener for when the user types in the search input
+    searchInput.addEventListener("input", () => {
+        const searchText = searchInput.value; // Use searchInput directly here
+
+        // Check if there are no results for the search
+        const noResults = Array.from(selectPicker.options).every(option => {
+            return option.text.toLowerCase().includes(searchText.toLowerCase());
+        });
+
+        if (noResults) {
+            // Create a new "Add Institution" option
+            const addInstitutionOption = document.createElement("option");
+            addInstitutionOption.value = "add_institution";
+            addInstitutionOption.text = "Add Institution";
+
+            // Add the "Add Institution" option to the select picker
+            selectPicker.appendChild(addInstitutionOption);
+
+            // Select the newly added "Add Institution" option
+            selectPicker.value = "add_institution";
+
+            alert("No results found");
+        }
+    });
+});

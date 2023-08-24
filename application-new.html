@@ -378,7 +378,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body text-capitalize">
                                     <p>Fill in the form correctly. Fields with an Asterisk <strong class="text-danger">*</strong> are mandatory fields.</p>
                                     <div id="kev-step-form">
                                         <!-- <div id=""> -->
@@ -452,15 +452,9 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <div class="row">
-                                                                <div class="col-lg-4 col-md-6">
-                                                                    <div class="mb-4">
-                                                                        <label for="basicpill-firstname-input">ID Num/ PPT Num<strong class="text-danger">*</strong></label>
-                                                                        <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Enter Your First Name">
-                                                                    </div>
-                                                                </div>
                                                                 <div class="col-md-6 col-lg-4 col-sm-12">
                                                                     <div class="mb-4">
-                                                                        <label for="" class="">Date of Registration<strong class="text-danger">*</strong></label>
+                                                                        <label for="" class="">Date Of Birth<strong class="text-danger">*</strong></label>
                                                                         <div class="input-group" id="datepicker1">
                                                                             <input type="text" class="form-control mouse-pointer" placeholder="Select Date" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker1' data-provide="datepicker" data-date-autoclose="true">
 
@@ -488,28 +482,204 @@
                                                                     </div>
 
                                                                 </div>
+                                                                <div class="col-lg-4 col-md-6">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">ID Num/ PPT Num<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Enter Your First Name">
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-lastname-input">Institution Type <strong class="text-danger">*</strong></label>
+                                                                <select class="form-control selectpicker"data-live-search="true" title="Select Instituion Type">
+                                                                    <option value="primary">Primary School</option>
+                                                                    <option value="secondary">Secondary School</option>
+                                                                    <option value="college">College</option>
+                                                                    <option value="university">University</option>
+                                                                    <option value="vocational">Vocational School</option>
+                                                                    <option value="technical">Technical Institute</option>                                                               
+                                                            </select>
                                                             </div>
                                                         </div>
 
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="mb-4">
-                                                                <label for="basicpill-lastname-input">Nationality <strong class="text-danger">*</strong></label>
-                                                                <select class="form-control selectpicker" data-live-search="true" title="Select nationality">
-                                                                    
-                                                                    <option value="" selected>Kenya</option>
-                                                                    <option value="">Brazil</option>
-                                                                    <option value="">South Africa</option>                                                                
-                                                            </select>
+                                                                <label for="basicpill-lastname-input">Name of the institution <strong class="text-danger">*</strong></label>
+                                                                <select class="form-control selectpicker select-can-add" data-live-search="true" title="Select school" id="school-list">
+                                                                    <option value="stmarys">St. Mary's School, Mwea</option>
+                                                                    <option value="mwangaza">Mwangaza Primary School</option>
+                                                                    <option value="mwamodo">Mwamodo Secondary School</option>
+                                                                    <option value="karima">Karima Girls' High School</option>
+                                                                    <option value="kamuiru">Kamuiru Primary School</option>
+                                                                </select>
                                                             </div>
                                                         </div>
+
                                                         <div class="col-lg-4 col-md-6">
                                                             <div class="mb-4">
-                                                                <label for="basicpill-lastname-input">Marital Status <strong class="text-danger">*</strong></label>
-                                                                <select class="form-control selectpicker" data-live-search="true" title="Select Marital status">
-                                                                
-                                                                    <option value="">Single</option>
-                                                                    <option value="">Married</option>                                                                
-                                                            </select>
+                                                                <label for="basicpill-firstname-input text-capitalize">Admission/Reg No.<strong class="text-danger"></strong></label>
+                                                                <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Enter number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-lastname-input">Campus/Branch <strong class="text-danger">*</strong></label>
+                                                                        <select class="form-control selectpicker select-can-add" data-live-search="true" title="Select school" id="school-list">
+                                                                            <option value="main-campus">Main Campus</option>
+                                                                            <option value="nairobi-campus">Nairobi Campus</option>
+                                                                            <option value="mombasa-campus">Mombasa Campus</option>
+                                                                            <option value="nakuru-campus">Nakuru Campus</option>
+                                                                            <option value="eldoret-campus">Eldoret Campus</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input text-capitalize">Department/Faculty<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Enter number">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input text-capitalize">Course of Study<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Enter number">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-lastname-input">Mode of Study <strong class="text-danger">*</strong></label>
+                                                                <select class="form-control selectpicker"  title="Select mode of study" id="school-list">
+                                                                    <option value="Reguler">Reguler</option>
+                                                                    <option value="Parallel">Parallel</option>
+                                                                    <option value="Boarding">Boarding</option>
+                                                                    <option value="Day">Day</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input text-capitalize">Course duration in years.<strong class="text-danger"></strong></label>
+                                                                <input type="text" class="form-control" id="" placeholder="Enter Duration">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-lastname-input">Ends on<strong class="text-danger">*</strong></label>
+                                                                <div class="d-flex">
+                                                                    <select class="form-control" >
+                                                                        <option value="Jan">Jan</option>
+                                                                        <option value="Feb">Feb</option>
+                                                                        <option value="Mar">Mar</option>
+                                                                        <option value="Apr">Apr</option>
+                                                                        <option value="May">May</option>
+                                                                        <option value="Jun">Jun</option>
+                                                                        <option value="Jul">Jul</option>
+                                                                        <option value="Aug">Aug</option>
+                                                                        <option value="Sep">Sep</option>
+                                                                        <option value="Oct">Oct</option>
+                                                                        <option value="Nov">Nov</option>
+                                                                        <option value="Dec">Dec</option>
+                                                                    </select>
+                                                                    <select class="form-control" id="years-select">
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-lastname-input">County <strong class="text-danger">*</strong></label>
+                                                                <select class="form-control selectpicker" data-live-search="true" title="Select County" id="">
+                                                                    <option value="Nairobi">Nairobi County</option>
+                                                                    <option value="Mombasa">Mombasa County</option>
+                                                                    <option value="Kwale">Kwale County</option>
+                                                                    <option value="Kilifi">Kilifi County</option>
+                                                                    <option value="TanaRiver">Tana River County</option>
+                                                                    <option value="Lamu">Lamu County</option>
+                                                                    <option value="TaitaTaveta">Taita-Taveta County</option>
+                                                                    <option value="Garissa">Garissa County</option>
+                                                                    <option value="Wajir">Wajir County</option>
+                                                                    <option value="Mandera">Mandera County</option>
+                                                                    <option value="Marsabit">Marsabit County</option>
+                                                                    <option value="Isiolo">Isiolo County</option>
+                                                                    <option value="Meru">Meru County</option>
+                                                                    <option value="TharakaNithi">Tharaka-Nithi County</option>
+                                                                    <option value="Embu">Embu County</option>
+                                                                    <option value="Kitui">Kitui County</option>
+                                                                    <option value="Machakos">Machakos County</option>
+                                                                    <option value="Makueni">Makueni County</option>
+                                                                    <option value="Nyandarua">Nyandarua County</option>
+                                                                    <option value="Nyeri">Nyeri County</option>
+                                                                    <option value="Kirinyaga" selected>Kirinyaga County</option>
+                                                                    <option value="Murang'a">Murang'a County</option>
+                                                                    <option value="Kiambu">Kiambu County</option>
+                                                                    <option value="Turkana">Turkana County</option>
+                                                                    <option value="WestPokot">West Pokot County</option>
+                                                                    <option value="Samburu">Samburu County</option>
+                                                                    <option value="TransNzoia">Trans Nzoia County</option>
+                                                                    <option value="UasinGishu">Uasin Gishu County</option>
+                                                                    <option value="ElgeyoMarakwet">Elgeyo-Marakwet County</option>
+                                                                    <option value="Nandi">Nandi County</option>
+                                                                    <option value="Bomet">Bomet County</option>
+                                                                    <option value="Kericho">Kericho County</option>
+                                                                    <option value="Kakamega">Kakamega County</option>
+                                                                    <option value="Vihiga">Vihiga County</option>
+                                                                    <option value="Bungoma">Bungoma County</option>
+                                                                    <option value="Busia">Busia County</option>
+                                                                    <option value="Siaya">Siaya County</option>
+                                                                    <option value="Kisumu">Kisumu County</option>
+                                                                    <option value="HomaBay">Homa Bay County</option>
+                                                                    <option value="Migori">Migori County</option>
+                                                                    <option value="Kisii">Kisii County</option>
+                                                                    <option value="Nyamira">Nyamira County</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-lastname-input">Ward <strong class="text-danger">*</strong></label>
+                                                                <select class="form-control selectpicker" data-live-search="true" title="Select Ward" id="">
+                                                                    <option value="Kerugoya">Kerugoya</option>
+                                                                    <option value="Kutus">Kutus</option>
+                                                                    <option value="Kianyaga">Kianyaga</option>
+                                                                    <option value="Baragwi">Baragwi</option>
+                                                                    <option value="Ndia">Ndia</option>
+                                                                    <option value="Gichugu">Gichugu</option>
+                                                                    <option value="Ngariama">Ngariama</option>
+                                                                    <option value="Kiangai">Kiangai</option>
+                                                                    <option value="Mutira">Mutira</option>
+                                                                    <option value="Thiba">Thiba</option>
+                                                                    <option value="Tebere">Tebere</option>
+                                                                    <option value="Karumandi">Karumandi</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Physical address <strong class="text-danger">*</strong></label>
+                                                                <input type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Enter Phone No.">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Parmanent Address <strong class="text-danger">*</strong></label>
+                                                                <input type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Enter Phone No.">
                                                             </div>
                                                         </div>
 
@@ -526,6 +696,13 @@
                                                             </div>
                                                         </div>
 
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Amount Applied For<strong class="text-danger">*</strong></label>
+                                                                <input type="text" class="form-control" id="" placeholder="KES ...">
+                                                            </div>
+                                                        </div>
+
 
 
                                                     </div>
@@ -535,14 +712,293 @@
                                         </div>
                                         <!-- next of kin and dependents -->
                                         <div class="step-cont d-none">
-                                            <h3>Next Of Kin</h3>
+                                            <h3>Family Background</h3>
                                             <section>
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Select the family status<strong class="text-danger">*</strong></label>
+                                                                <select name="" id="" class="form-control form-select family-state">
+                                                                    <option value="Both Parents are dead">Both Parents are dead</option>
+                                                                    <option value="One parent dead">One parent dead</option>
+                                                                    <option value="Both parents dead">Both parenst alive</option>
+                                                                    <option value="single parent">Single parent</option>
+                                                                    <option value="other">Other status</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 other-family-status d-none">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Other Family status<strong class="text-danger"></strong></label>
+                                                                <input type="text" class="form-control" id="" placeholder="Enter other family status">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6 other-family-status">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Number of siblings (Alive)<strong class="text-danger"></strong></label>
+                                                                <input type="text" class="form-control" id="" placeholder="Enter number of siblings">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6 other-family-status">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Family expenses<strong class="text-danger"></strong></label>
+                                                                <input type="text" class="form-control" id="" placeholder="Enter estimate Annual">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-md-6 other-family-status">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Family Income<strong class="text-danger"></strong></label>
+                                                                <input type="text" class="form-control" id="" placeholder="Enter estimated Annual">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 mt-4">
+                                                            <div class="mb-4">
+                                                                <h5 class="font-size-14 mb-4">Is The father available</h5>
+                                                                <div class="d-flex">
+                                                                    <div class="form-check mb-3">
+                                                                        <input class="form-check-input" type="radio" name="father-radio" id="father-yes" checked="" value="yes">
+                                                                        <label class="form-check-label" for="father-yes">
+                                                                            Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check mx-4">
+                                                                        <input class="form-check-input" type="radio" name="father-radio" id="father-no" value="no">
+                                                                        <label class="form-check-label" for="father-no">
+                                                                            Passed Away
+                                                                        </label>
+                                                                    </div>
+    
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="father-radio" id="farther-away" value="Dead beat">
+                                                                        <label class="form-check-label" for="farther-away">
+                                                                            Does not provide for the family
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 father-inputs">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Father's Full Names<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Father's Full Name">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Phone Number<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="enter farther's Phone Number">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Address<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Father's Address">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Occupation<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Enter father's occupation">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Type of Employment<strong class="text-danger">*</strong></label>
+                                                                        <select name="" id="" class="form-control form-select">
+                                                                            <option value="Permanent">Permanent</option>
+                                                                            <option value="Contractual">Contractual</option>
+                                                                            <option value="casual">casual</option>
+                                                                            <option value="Retired">Retired</option>
+                                                                            <option value="Self employed">Self employed</option>
+                                                                            <option value="none">None</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Main Source of income<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Enter">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 mt-4">
+                                                            <div class="mb-4">
+                                                                <h5 class="font-size-14 mb-4">Is The Mother still available</h5>
+                                                                <div class="d-flex">
+                                                                    <div class="form-check mb-3">
+                                                                        <input class="form-check-input" type="radio" name="mother-radio" id="mother-yes" checked="" value="yes">
+                                                                        <label class="form-check-label" for="mother-yes">
+                                                                            Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check mx-4">
+                                                                        <input class="form-check-input" type="radio" name="mother-radio" id="mother-no" value="no">
+                                                                        <label class="form-check-label" for="mother-no">
+                                                                            Passed Away
+                                                                        </label>
+                                                                    </div>
+    
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="mother-radio" id="mother-away" value="dead beat">
+                                                                        <label class="form-check-label" for="mother-away">
+                                                                            Does not provide for the family
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 mother-inputs">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Mother's Full Names<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Mother's Full Name">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Mother's Phone Number<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="enter Mother's Phone Number">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Mother's Address<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Mother's Address">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Mother's Occupation<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Enter Mother's occupation">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Mother's Type of Employment<strong class="text-danger">*</strong></label>
+                                                                        <select name="" id="" class="form-control form-select">
+                                                                            <option value="Permanent">Permanent</option>
+                                                                            <option value="Contractual">Contractual</option>
+                                                                            <option value="casual">casual</option>
+                                                                            <option value="Retired">Retired</option>
+                                                                            <option value="Self employed">Self employed</option>
+                                                                            <option value="none">None</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Mother's Main Source of income<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Enter">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 mt-4">
+                                                            <div class="mb-4">
+                                                                <h5 class="font-size-14 mb-4">Is the applicant under the care of a Guardian?</h5>
+                                                                <div class="d-flex">
+                                                                    <div class="form-check mb-3">
+                                                                        <input class="form-check-input" type="radio" name="guardian-radio" id="guardian-yes" checked="" value="yes">
+                                                                        <label class="form-check-label" for="guardian-yes">
+                                                                            Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check mx-4">
+                                                                        <input class="form-check-input" type="radio" name="guardian-radio" id="guardian-no" value="no">
+                                                                        <label class="form-check-label" for="guardian-no">
+                                                                            No
+                                                                        </label>
+                                                                    </div>
+    
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 guardian-inputs">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Guardian's Full Names<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Guardian's Full Name">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Guardian's Phone Number<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="enter Guardian's Phone Number">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Guardian's Address<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Guardian's Address">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Guardian's Occupation<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Enter Guardian's occupation">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Guardian's Type of Employment<strong class="text-danger">*</strong></label>
+                                                                        <select name="" id="" class="form-control form-select">
+                                                                            <option value="Permanent">Permanent</option>
+                                                                            <option value="Contractual">Contractual</option>
+                                                                            <option value="casual">casual</option>
+                                                                            <option value="Retired">Retired</option>
+                                                                            <option value="Self employed">Self employed</option>
+                                                                            <option value="none">None</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Guardian's Main Source of income<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Enter">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
                                                 <form>
                                                     <div class="row">
 
                                                         <div class="col-12">
                                                             <div class="bg-primary border-2 bg-soft p-3 mb-4">
-                                                                <p class="fw-semibold mb-0 pb-0">Next of Kin Details</p>
+                                                                <p class="fw-semibold mb-0 pb-0">names of siblings in school this year</p>
 
                                                             </div>
                                                         </div>
@@ -552,10 +1008,10 @@
                                                                 <thead class="table-light">
                                                                     <tr class="text-uppercase table-dark">
                                                                         <th>#</th>
-                                                                        <th>First name</th>
-                                                                        <th class="">Middle name</th>
-                                                                        <th class="">other names</th>
-                                                                        <th class="">Relationship</th>
+                                                                        <th>Full Names</th>
+                                                                        <th class="">Institution Type</th>
+                                                                        <th class="">Institution's Name</th>
+                                                                        <th class="">Annual Fees Payable</th>
                                                                         <th></th>
                                                                     </tr>
                                                                 </thead>
@@ -563,20 +1019,30 @@
                                                                     <tr data-id="1">
                                                                         <td style="width: 80px">1.</td>
                                                                         <td>
-                                                                            <input type="text " class="form-control " placeholder="Enter First name" spellcheck="false" data-ms-editor="true">
+                                                                            <input type="text " class="form-control " placeholder="Enter Full Names" spellcheck="false" data-ms-editor="true">
                                                                         </td>
                                                                         <td class="">
-                                                                            <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
+                                                                            <select class="form-control selectpicker select-can-add"  title="Select Institution type" id="school-list">
+                                                                                <option value="primary">Primary School</option>
+                                                                                <option value="secondary">Secondary School</option>
+                                                                                <option value="college">College</option>
+                                                                                <option value="university">University</option>
+                                                                                <option value="vocational">Vocational School</option>
+                                                                                <option value="technical">Technical Institute</option>    
+                                                                            </select>
                                                                         </td>
                                                                         <td class="">
-                                                                            <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
+                                                                            <select class="form-control selectpicker select-can-add" data-live-search="true" title="Institution Name" id="school-list">
+                                                                                <option value="stmarys">St. Mary's School, Mwea</option>
+                                                                                <option value="mwangaza">Mwangaza Primary School</option>
+                                                                                <option value="mwamodo">Mwamodo Secondary School</option>
+                                                                                <option value="karima">Karima Girls' High School</option>
+                                                                                <option value="kamuiru">Kamuiru Primary School</option>
+                                                                            </select>
                                                                         </td>
                                                                         <td>
-                                                                            <select class="form-control selectpicker" data-live-search="true" title="Select Relationship">
-                                                                                <option value="">Father</option>
-                                                                                <option value="">Mother</option>   
-                                                                                <option value="">Sister</option>                                                                
-                                                                        </select>
+                                                                            <input type="text " class="form-control " placeholder="School Fee amount" spellcheck="false" data-ms-editor="true">
+
                                                                         </td>
                                                                         <td></td>
 
@@ -586,22 +1052,31 @@
                                                                         <td style="width: 80px " class="categoryIndex ">#</td>
 
                                                                         <td>
-                                                                            <input type="text " class="form-control " placeholder="Enter First name" spellcheck="false" data-ms-editor="true">
+                                                                            <input type="text " class="form-control " placeholder="Enter Full Names" spellcheck="false" data-ms-editor="true">
                                                                         </td>
                                                                         <td class="">
-                                                                            <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
-                                                                        </td>
-                                                                        <td class="">
-                                                                            <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
-                                                                        </td>
-                                                                        <td>
-                                                                            <select class="form-control selectpicker" data-live-search="true" title="Select Relationship">
-                                                                                    <option value="">Father</option>
-                                                                                    <option value="">Mother</option>   
-                                                                                    <option value="">Sister</option>                                                                
+                                                                            <select class="form-control selectpicker select-can-add"  title="Select Institution type" id="school-list">
+                                                                                <option value="primary">Primary School</option>
+                                                                                <option value="secondary">Secondary School</option>
+                                                                                <option value="college">College</option>
+                                                                                <option value="university">University</option>
+                                                                                <option value="vocational">Vocational School</option>
+                                                                                <option value="technical">Technical Institute</option>    
                                                                             </select>
                                                                         </td>
+                                                                        <td class="">
+                                                                            <select class="form-control selectpicker select-can-add" data-live-search="true" title="Institution Name" id="school-list">
+                                                                                <option value="stmarys">St. Mary's School, Mwea</option>
+                                                                                <option value="mwangaza">Mwangaza Primary School</option>
+                                                                                <option value="mwamodo">Mwamodo Secondary School</option>
+                                                                                <option value="karima">Karima Girls' High School</option>
+                                                                                <option value="kamuiru">Kamuiru Primary School</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="text " class="form-control " placeholder="School Fee amount" spellcheck="false" data-ms-editor="true">
 
+                                                                        </td>
                                                                         <td class="text-right cell-change d-flex align-items-center justify-content-end">
                                                                             <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
                                                                         </td>
@@ -631,154 +1106,261 @@
 
                                         <!-- Payment Details -->
                                         <div class="step-cont d-none">
-                                            <h3>Truck(s) Registration</h3>
+                                            <h3>Applicant's Additional Information</h3>
                                             <section>
                                                 <form>
-                                                    <div class="row clone-cont">
-                                                        <div class="col-12 clone-me">
-                                                            <div class="row ">
-                                                                <!-- truck registration -->
-                                                                <div class="col-12">
-                                                                    <div class="bg-primary border-2 bg-soft p-3 mb-4">
-                                                                        <p class="fw-semibold mb-0 pb-0">Truck No. 1</p>
-
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class="truck-reg-cont p-4">
-                                                                        <div class="row">
-                                                                            <div class="col-12">
-                                                                                <div class="bg-warning border-2 bg-soft p-2 mb-4 d-flex align-items-center">
-                                                                                    <i class="mdi mdi-truck-delivery-outline font-28 mr-15px"></i>
-                                                                                    <p class="fw-semibold mb-0 pb-0">Truck Details</p>
-
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-4 col-md-6">
-                                                                                <div class="mb-4">
-                                                                                    <label for="basicpill-firstname-input">Plate Number <strong class="text-danger">*</strong></label>
-                                                                                    <input type="text" class="form-control" id="" placeholder="Plate No.">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-6 col-lg-4 col-sm-12">
-                                                                                <div class="mb-4">
-                                                                                    <label for="" class="">Last inspection Date</label>
-                                                                                    <div class="input-group" id="datepicker10">
-                                                                                        <input type="text" class="form-control mouse-pointer" placeholder="Select the previous date of inspection" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker10' data-provide="datepicker" data-date-autoclose="true">
-
-                                                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-md-6 col-lg-4 col-sm-12">
-                                                                                <div class="mb-4">
-                                                                                    <label for="" class="">Next Inspection Date<strong class="text-danger">*</strong></label>
-                                                                                    <div class="input-group" id="datepicker11">
-                                                                                        <input type="text" class="form-control mouse-pointer" placeholder="Select Next inspection Date" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker11' data-provide="datepicker" data-date-autoclose="true">
-
-                                                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-12">
-                                                                                <div class="bg-warning border-2 mt-4 bg-soft p-2 mb-4 d-flex align-items-center">
-                                                                                    <i class="mdi mdi-clipboard-text-outline font-28 mr-15px"></i>
-                                                                                    <p class="fw-semibold mb-0 pb-0">Documents and attachments</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-sm-3">
-                                                                                <div>
-                                                                                    <label class="form-label">Logbook</label>
-                                                                                    <div class="input-group mb-3 cursor-pinter">
-                                                                                        <label class="input-group-text bg-primary text-white" for="truck-logbook">Select Logbook</label>
-                                                                                        <input type="file" class="form-control" id="truck-logbook">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-sm-3">
-                                                                                <div>
-                                                                                    <label class="form-label">Front view image</label>
-                                                                                    <div class="input-group mb-3 cursor-pinter">
-                                                                                        <label class="input-group-text bg-primary text-white" for="truck-front-img">Select photo</label>
-                                                                                        <input type="file" class="form-control" id="truck-front-img">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-sm-3">
-                                                                                <div>
-                                                                                    <label class="form-label">Rare view image</label>
-                                                                                    <div class="input-group mb-3 cursor-pinter">
-                                                                                        <label class="input-group-text bg-primary text-white" for="truck-rare-img">Select photo</label>
-                                                                                        <input type="file" class="form-control" id="truck-rare-img">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-sm-3">
-                                                                                <div>
-                                                                                    <label class="form-label">Insurance</label>
-                                                                                    <div class="input-group mb-3 cursor-pinter">
-                                                                                        <label class="input-group-text bg-primary text-white" for="truck-rare-img">Upload Insurance</label>
-                                                                                        <input type="file" class="form-control" id="truck-rare-img">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-12">
-                                                                                <div class="bg-warning border-2 bg-soft mt-4 p-2 mb-4 d-flex align-items-center">
-                                                                                    <i class="mdi mdi-steering font-28 mr-15px"></i>
-                                                                                    <p class="fw-semibold mb-0 pb-0">Driver details</p>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-4 col-md-6">
-                                                                                <div class="mb-4">
-                                                                                    <label for="basicpill-firstname-input">Driver's First Name </label>
-                                                                                    <input type="text" class="form-control" id="" placeholder="Enter first Name">
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-lg-4 col-md-6">
-                                                                                <div class="mb-4">
-                                                                                    <label for="basicpill-firstname-input">Driver's Second Name </label>
-                                                                                    <input type="text" class="form-control" id="" placeholder="Enter second Name">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-4 col-md-6">
-                                                                                <div class="mb-4">
-                                                                                    <label for="basicpill-firstname-input">Driver's Other Name(s) </label>
-                                                                                    <input type="text" class="form-control" id="" placeholder="Enter driver's Other names">
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-lg-4 col-md-6">
-                                                                                <div class="mb-4">
-                                                                                    <label for="basicpill-firstname-input">Driver's ID Num</label>
-                                                                                    <input type="text" class="form-control" id="" placeholder="Enter driver's ID No.">
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-lg-4 col-md-6">
-                                                                                <div class="mb-4">
-                                                                                    <label for="basicpill-firstname-input">Driver's License No. </label>
-                                                                                    <input type="text" class="form-control" id="" placeholder="Driver's License No">
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-
-
-
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 other-family-status">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Why is the person applying for bursery<strong class="text-danger"></strong></label>
+                                                                <input type="text" class="form-control" id="" placeholder="Reason for application">
                                                             </div>
                                                         </div>
-                                                        <div class="col-12 mb-5">
-                                                            <button class="btn btn-outline-secondary waves-effect waves-light w-100" type="submit "><i class="bx bx-plus me-1"></i> Add Another Truck</button>
+
+                                                        <div class="col-lg-12 col-md-12 other-family-status">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Has the applicant previously received NG CDF financial assistance?<strong class="text-danger"></strong></label>
+                                                                <div class="d-flex">
+                                                                    <div class="form-check mb-3 pr-15px">
+                                                                        <input class="form-check-input" type="radio" name="received-before" id="received-yes" value="yes">
+                                                                        <label class="form-check-label" for="received-yes">
+                                                                            Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="received-before" id="received-no" checked  value="no">
+                                                                        <label class="form-check-label" for="received-no">
+                                                                            No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 cdf-aid-before d-none">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Amount allocated By CDF Before<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="KES">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Received assistance on<strong class="text-danger"></strong></label>
+                                                                        <input class="form-control" type="month" value="2019-08" id="example-month-input">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="col-lg-12 col-md-12 other-family-status">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Has the applicant received financial aid from other organizations previously?<strong class="text-danger"></strong></label>
+                                                                <div class="d-flex">
+                                                                    <div class="form-check mb-3 pr-15px">
+                                                                        <input class="form-check-input" type="radio" name="received-aid" id="aid-yes" value="yes">
+                                                                        <label class="form-check-label" for="aid-yes">
+                                                                            Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="received-aid" id="aid-no" checked=""  value="no">
+                                                                        <label class="form-check-label" for="aid-no">
+                                                                            No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 other-aid-inputs d-none">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Organization's Name<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Enter name of the organization">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Amount received<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="KES">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Received assistance on<strong class="text-danger"></strong></label>
+                                                                        <input class="form-control" type="month" value="2019-08" id="example-month-input">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-12 col-md-12 other-family-status">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Does the applicant suffer from any physical imparement?<strong class="text-danger"></strong></label>
+                                                                <div class="d-flex">
+                                                                    <div class="form-check mb-3 pr-15px">
+                                                                        <input class="form-check-input" type="radio" name="physican-suffure" id="physical-yes" value="yes">
+                                                                        <label class="form-check-label" for="physical-yes">
+                                                                            Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="physican-suffure" id="physical-no" checked=""  value="no">
+                                                                        <label class="form-check-label" for="physical-no">
+                                                                            No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 physical-condition-inputs d-none">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Condition<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Name of the Condition">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">More Details<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="More details about the condition">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+
+
+                                                        <div class="col-lg-12 col-md-12 other-family-status">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Does the applicant suffer from any chronic illnesses<strong class="text-danger"></strong></label>
+                                                                <div class="d-flex">
+                                                                    <div class="form-check mb-3 pr-15px">
+                                                                        <input class="form-check-input" type="radio" name="chronic-suffure" id="chronic-yes" value="yes">
+                                                                        <label class="form-check-label" for="chronic-yes">
+                                                                            Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="chronic-suffure" id="chronic-no" checked=""  value="no">
+                                                                        <label class="form-check-label" for="chronic-no">
+                                                                            No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 chronic-condition-inputs d-none">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Chronic Disease<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Name of Disease">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">More Details<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="More details about the condition">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+
+                                                        <div class="col-lg-12 col-md-12 other-family-status">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Does any of the applicants parents/guardians suffer from any form of disability?<strong class="text-danger"></strong></label>
+                                                                <div class="d-flex">
+                                                                    <div class="form-check mb-3 pr-15px">
+                                                                        <input class="form-check-input" type="radio" name="disabled-parent" id="parent-yes" value="yes">
+                                                                        <label class="form-check-label" for="parent-yes">
+                                                                            Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="disabled-parent" id="parent-no" checked=""  value="no">
+                                                                        <label class="form-check-label" for="parent-no">
+                                                                            No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 parent-condition-inputs d-none">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Name of Disability<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Name of Disease">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">More Details about the disability<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="More details about the condition">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+
+                                                        <div class="col-lg-12 col-md-12 other-family-status">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Does any of the applicants parents/guardians suffer from any chronic illnesses?<strong class="text-danger"></strong></label>
+                                                                <div class="d-flex">
+                                                                    <div class="form-check mb-3 pr-15px">
+                                                                        <input class="form-check-input" type="radio" name="chronic-parent" id="chronic-parent-yes" value="yes">
+                                                                        <label class="form-check-label" for="chronic-parent-yes">
+                                                                            Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="chronic-parent" id="chronic-parent-no" checked=""  value="no">
+                                                                        <label class="form-check-label" for="chronic-parent-no">
+                                                                            No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 parent-chronic-inputs d-none">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">Name of Disability<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="Name of Disease">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4 col-md-6 other-family-status">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">More Details about the disability<strong class="text-danger"></strong></label>
+                                                                        <input type="text" class="form-control" id="" placeholder="More details about the condition">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
                                                         </div>
                                                     </div>
+
+                                                    
+                                                   
 
                                                 </form>
                                             </section>
@@ -787,8 +1369,71 @@
 
                                         <!-- Confirm Details -->
                                         <div class="step-cont d-none">
-                                            <h3>Payments And confirmation</h3>
+                                            <h3>Education Funding History</h3>
+                                            
                                             <section>
+                                                <div class="row">
+                                                    <div class="col-12 mb-3">
+                                                        <p><i>Indicate the main sources of funding for your education in the past as below:</i></p>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 other-family-status">
+                                                        <div class="mb-4">
+                                                            <label for="basicpill-firstname-input">In Primary School<strong class="text-danger"></strong></label>
+                                                            <input type="text" class="form-control" id="" placeholder="Enter income source">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-3 col-md-6 other-family-status">
+                                                        <div class="mb-4">
+                                                            <label for="basicpill-firstname-input">In Secondary School<strong class="text-danger"></strong></label>
+                                                            <input type="text" class="form-control" id="" placeholder="Enter income source">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 other-family-status">
+                                                        <div class="mb-4">
+                                                            <label for="basicpill-firstname-input">In college<strong class="text-danger"></strong></label>
+                                                            <input type="text" class="form-control" id="" placeholder="Enter income source">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-3 col-md-6 other-family-status">
+                                                        <div class="mb-4">
+                                                            <label for="basicpill-firstname-input">In University<strong class="text-danger"></strong></label>
+                                                            <input type="text" class="form-control" id="" placeholder="Enter income source">
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-12 mb-3">
+                                                        <p><i>Indicate other sources of income if any</i></p>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 other-family-status">
+                                                        <div class="mb-4">
+                                                            <label for="basicpill-firstname-input">In Primary School<strong class="text-danger"></strong></label>
+                                                            <input type="text" class="form-control" id="" placeholder="Enter income source">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-3 col-md-6 other-family-status">
+                                                        <div class="mb-4">
+                                                            <label for="basicpill-firstname-input">In Secondary School<strong class="text-danger"></strong></label>
+                                                            <input type="text" class="form-control" id="" placeholder="Enter income source">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 other-family-status">
+                                                        <div class="mb-4">
+                                                            <label for="basicpill-firstname-input">In college<strong class="text-danger"></strong></label>
+                                                            <input type="text" class="form-control" id="" placeholder="Enter income source">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-3 col-md-6 other-family-status">
+                                                        <div class="mb-4">
+                                                            <label for="basicpill-firstname-input">In University<strong class="text-danger"></strong></label>
+                                                            <input type="text" class="form-control" id="" placeholder="Enter income source">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <form>
                                                     <div class="col-12">
                                                         <div class="bg-primary border-2 bg-soft p-3 mb-4">
@@ -1117,6 +1762,23 @@
     <!-- App js -->
     <script src="assets/js/app.js "></script>
     <script src="assets/js/custom.js "></script>
+
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+
+        // Get the select element
+        const select = document.getElementById("years-select");
+
+        // Create options for the coming 9 years and add them to the select element
+        for (let i = 0; i < 9; i++) {
+            const option = document.createElement("option");
+            option.value = currentYear + i;
+            option.text = currentYear + i;
+            select.appendChild(option);
+        }
+    </script>
+
 </body>
 
 

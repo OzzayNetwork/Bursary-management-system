@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Select Picker with Live Search</title>
+    <!-- Include Bootstrap CSS and JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Select Picker with Live Search</h2>
+        <div class="form-group">
+            <label for="school-list">Select a School:</label>
+            <select class="form-control selectpicker" data-live-search="true" title="Select school" id="school-list">
+                <option value="stmarys">St. Mary's School, Mwea</option>
+                <option value="mwangaza">Mwangaza Primary School</option>
+                <option value="mwamodo">Mwamodo Secondary School</option>
+                <option value="karima">Karima Girls' High School</option>
+                <option value="kamuiru">Kamuiru Primary School</option>
+            </select>
+        </div>
+    </div>
+
+    <script>
+        // Get the select element
+        const selectPicker = document.getElementById("school-list");
+
+        // Get the live search input element
+        const searchInput = document.querySelector(".bs-searchbox input");
+
+        // Function to run as the user types in the live search input
+        function handleSearch() {
+            const searchText = searchInput.value;
+            // Replace this with your custom code to handle the search input
+            console.log(`Searching for: ${searchText}`);
+        }
+
+        // Add an event listener for the input event on the live search input
+        searchInput.addEventListener('input', handleSearch);
+    </script>
+</body>
+
+</html>

@@ -1384,3 +1384,6 @@ body[data-sidebar=dark] .menu-title {
 .bg-black{
     background-color: #004D40 !important;
 }
+.table-responsive{
+    min-height: 350px;
+}
