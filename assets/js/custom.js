@@ -969,6 +969,17 @@ $(document).ready(function(){
             $('.parent-condition-inputs').addClass("d-none")
         }
     })
+
+    $('body').on('change','[name="sent-away"]', function(){
+        const val =$(this).val()
+        if(val==="yes"){
+            $('.sent-away-inputs').removeClass("d-none")
+        }
+
+        if(val!="yes"){
+            $('.sent-away-inputs').addClass("d-none")
+        }
+    })
 })
 
 // Get all elements with the class "select-can-add"
