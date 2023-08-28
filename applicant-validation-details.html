@@ -932,11 +932,11 @@
                                   
                                     <div class="d-print-none">
                                         <div class="float-end">
-                                            <button class="btn btn-danger mx-3">
+                                            <button class="btn btn-danger mx-3"  data-toggle="modal" data-target="#declinedModal">
                                                 Decline application
                                             </button>
 
-                                            <button class="btn btn-success">
+                                            <button class="btn btn-success" data-toggle="modal" data-target="#approvalModal">
                                                 Approve application
                                             </button>
                                         </div>
@@ -955,117 +955,57 @@
             </div>
             <!-- End Page-content -->
 
-            <!-- OTP modal -->
-            <div class="modal fade OTP-modal " tabindex="-1 " role="dialog " aria-hidden="true ">
-                <div class="modal-dialog modal-dialog-centered ">
-                    <div class="modal-content ">
-                        <div class="modal-header border-bottom-0 ">
-                            <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
-                        </div>
-                        <div class="modal-body ">
-                            <div class="text-center mb-4 ">
-                                <div class="avatar-md mx-auto mb-4 ">
-                                    <div class="avatar-title bg-light rounded-circle text-primary h1 ">
-                                        <i class="mdi mdi-cellphone-message "></i>
-                                    </div>
-                                </div>
-
-                                <div class="row justify-content-center ">
-                                    <div class="col-xl-10 ">
-                                        <h4 class="text-primary ">Confirm OTP</h4>
-                                        <p class="text-muted font-size-14 mb-4 ">An OTP has been sent to <strong>0704549859</strong> kindly ask the Member being registered to check their phone and share the OTP sent to them with you and enetr it below to confirm</p>
-
-                                        <form>
-                                            <div class="row ">
-                                                <div class="col-3 ">
-                                                    <div class="mb-3 ">
-                                                        <label for="digit1-input " class="visually-hidden ">Dight 1</label>
-                                                        <input type="text " class="form-control form-control-lg text-center two-step " maxLength="1 " data-value="1 " id="digit1-input ">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-3 ">
-                                                    <div class="mb-3 ">
-                                                        <label for="digit2-input " class="visually-hidden ">Dight 2</label>
-                                                        <input type="text " class="form-control form-control-lg text-center two-step " maxLength="1 " data-value="2 " id="digit2-input ">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-3 ">
-                                                    <div class="mb-3 ">
-                                                        <label for="digit3-input " class="visually-hidden ">Dight 3</label>
-                                                        <input type="text " class="form-control form-control-lg text-center two-step " maxLength="1 " data-value="3 " id="digit3-input ">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-3 ">
-                                                    <div class="mb-3 ">
-                                                        <label for="digit4-input " class="visually-hidden ">Dight 4</label>
-                                                        <input type="text " class="form-control form-control-lg text-center two-step " maxLength="1 " data-value="4 " id="digit4-input ">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button class="btn btn-primary btn-block w-100 ">
-                                                Verify phone number
-                                            </button>
-                                        </form>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+          <!-- application approval modal -->
+          <div class="modal fade" id="approvalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Approve Application</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-12 text-capitalize">
+                        <label for="">Amount Approved</label>
+                        <input type="text" class="form-control" placeholder="amount approved">
                     </div>
                 </div>
-                <!-- /.modal-dialog -->
+                <div class="modal-footer">
+                 
+                  <button type="button" class="btn btn-primary btn-100 d-flex">Approve Application</button>
+                </div>
+              </div>
             </div>
-            <!-- end modal -->
+          </div>
+          <!-- application approval modal -->
 
-            <!-- tenant id number modal -->
-            <div class="modal fade " id="subscribeModal" data-bs-backdrop="static " data-bs-keyboard="false " tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
-                <div class="modal-dialog modal-dialog-centered ">
-                    <div class="modal-content ">
-                        <div class="modal-header border-bottom-0 ">
-                            <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
-                        </div>
-                        <div class="modal-body ">
-                            <div class="text-center mb-4 ">
-                                <div class="avatar-md mx-auto mb-4 ">
-                                    <div class="avatar-title bg-light rounded-circle text-primary h1 ">
-                                        <i class="mdi mdi-card-account-details-outline "></i>
-                                    </div>
-                                </div>
+          <!-- declined applications -->
+          <div class="modal fade" id="declinedModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Decline Application</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-12 text-capitalize">
+                        <label for="">Amount Approved</label>
+                       <textarea class="form-control" placeholder="Start Typing ...">
 
-                                <div class="row justify-content-center ">
-                                    <div class="col-xl-10 ">
-                                        <h4 class="text-primary ">Member's ID Number</h4>
-                                        <p class="text-muted font-size-14 mb-4 ">
-                                            Enter the members ID No. This is important in checking if the member already exists in the system.
-                                        </p>
-
-                                        <form>
-                                            <div class="row ">
-                                                <div class="col-12 ">
-                                                    <div class="mb-3 ">
-                                                        <label for="digit1-input " class="visually-hidden ">ID Number</label>
-                                                        <input type="text " class="form-control form-control-lg text-center two-step " placeholder="ID / PPT No. ">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button class="btn btn-primary btn-block w-100 ">
-                                                    <i class="bx bx-search-alt-2 font-size-16 align-middle me-2 "></i>
-                                                Search
-                                            </button>
-                                        </form>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       </textarea>
                     </div>
                 </div>
+                <div class="modal-footer">
+                 
+                  <button type="button" class="btn btn-danger btn-100 d-flex">Reason for Declining</button>
+                </div>
+              </div>
             </div>
-            <!-- tenant id number modal -->
-
+          </div>
+          <!-- end of declined appliocations -->
 
 
 
